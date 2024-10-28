@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color:white;
+    color: black;
+    display: flex;
+    align-items: center;
+    top: 0;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    margin: 0px 10px;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li::after{
+   content: '';
+   width: 0;
+   bottom: -10px;
+   left: 0;
+   background-color: black;
+   height: 3px;
+   position: absolute;
+   transition: 0.3s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.apple{
+    margin-left: 290px;
+}
+.search{
+    margin-left: 30px;
+}
+.bag{
+    margin-left: 20px;
+}
+.menu{
+    display: none;
+}
+@media(max-width:1285px){
+    .apple{
+        margin-left: 50px;
+    }
+}
+@media (max-width: 820px){
+    nav ul li{
+        display: none;
+    }
+    nav .apple{
+        margin-left: 20px;
+    }
+    nav ion-icon{
+        font-size: 18px;
+    }
+    nav .search{
+        margin-left: 70%;
+    }
+    nav .menu{
+        margin-left: 10px;
+        display: block;
+    }  
+}
+
+@media (max-width: 500px){
+    nav .apple{
+        margin-left: 20px;
+    }
+    nav ion-icon{
+        font-size: 20px;
+        display: block;
+        position: absolute;
+    }
+    nav .search{
+        margin-left: 70%;
+    }
+    nav .bag {
+        margin-left: 80%    ;
+    }
+    nav .menu{
+        display: block;
+        margin-left: 90%;
+    }
+}
+
+
+.header_cover{
+    width: 100%;
+    background-color:rgba(128, 128, 128, 0.052);
+}
+header{
+    width: 90%;
+    margin-left: 5%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.watch_name{
+    width: 150px;
+    text-align: center;
+    height: 90px;
+    margin: 10px;
+}
+.watch_name img{
+    height: 70%;
+}
+.watch_name p{
+    font-size: 14px;
+}
+@media(max-width:1039px){
+    header{
+        overflow: scroll;
+        height: 210px;
+    }
+}
+
+
+.ad{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.147);
+}
+.ad a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+.ad a:hover{
+    text-decoration: underline;
+}
+.ad ion-icon{
+    position: relative;
+    top: 3;
+}
+@media(max-width:641px){
+    .ad{
+        height: 60px;
+    }
+    .ad p{
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    .ad a{
+        font-size: 14px;
+    }
+}
+
+
+
+.part_one{
+    width: 100%;
+    height: auto;
+}
+.part_one h1{
+    display: inline-block;
+    margin: 50px;
+    font-size: 65px;
+}
+.part_one p{
+    display: inline-block;
+    margin-left: 750px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.part_one video{
+    margin-left: 10%;
+    border-radius: 20px;
+}
+@media(max-width:1286px){
+    .part_one p{
+        position: relative;
+        top: -140;
+    }
+}
+@media(max-width:1012px){
+    .part_one p{
+        margin-left: 650px;
+        top: -120;
+        font-size: 20px;
+    }
+    .part_one h1{
+        font-size: 45px;
+    }
+}
+@media(max-width:860px){
+    .part_one p{
+        margin-left: 450px;
+        top: -110;
+    }
+}
+@media(max-width:655px){
+    .part_one p{
+        margin-left: 40px;
+        top: -30;
+    }
+}
+
+.alone{
+    margin: 100px 150px;
+    font-size: 45px;
+}
+@media(max-width:860px){
+    .alone{
+        margin-left: 100px; 
+        font-size: 30px;       
+    }
+}
+@media(max-width:530px){
+    .alone{
+        margin-left: 30px;
+    }
+}.part_two{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+ 
+.part_two_card{
+    width: 420px;
+    height: 750px;
+    border-radius: 20px;
+    color: black;
+    margin: 20px;
+    background-position: center;
+    background-size: cover;
+}
+.part_two_card h6{
+    padding-top: 30px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.part_two_card p{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.one{
+   background-image: url(https://www.apple.com/v/watch/bo/images/overview/consider/feature_health__b8l8jg8aa0b6_small.jpg); 
+   margin-left: 130px;
+   color: white;
+}
+.two{
+    background-image: url(https://www.apple.com/v/watch/bo/images/overview/consider/feature_fitness__bqrhzxk45liu_small.jpg);
+}
+.three{
+    background-image: url(https://www.apple.com/v/watch/bo/images/overview/consider/feature_connectivity__k68bkgj3a6ie_small.jpg);
+}
+@media(max-width:1286px){
+    .part_two{
+        justify-content: center;
+    }
+    .one{
+        margin-left: 20px;
+    }
+}
+
+
+main{
+    background-color: rgba(128, 128, 128, 0.147);
+}
+.part_three{
+    margin-top: 210px;
+    padding-top: 80px;
+    width: 100%;
+    height: auto;
+}
+.lineup{
+    display: flex;
+    align-items: center;
+}
+.lineup p{
+    margin-left: 100px;
+    font-size: 45px;
+    font-weight: 700;
+}
+.lineup a{
+    text-decoration: none;
+    color: rgb(14, 102, 169);
+    margin-left: 50%;
+}
+.models{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.models_name{
+    text-align: center;
+    margin: 20px 70px;
+}
+.models_name img{
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.models_name img:hover{
+     transform: scale(1.05);
+} 
+.round{
+    width: 10px;
+    height: 11px;
+    border: none;
+    border-radius: 50%;
+}
+.black{ 
+    background-color: black;
+}
+.grey{
+    background-color: rgba(128, 128, 128, 0.342);
+}
+.beige{
+    background-color: rgb(219, 219, 150);
+}
+.white{
+    background-color: rgba(128, 128, 128, 0.186);
+    box-shadow: 0.4px 0px 0px 0px black;
+}
+.pink{
+    background-color: pink;
+}
+.brown{
+    background-color: rgba(106, 43, 43, 0.795);
+}
+.models_name h3{
+    margin-top: 40px;
+    font-size: 25px;
+}
+.models_name h4{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.models_name h5{
+    font-weight: 400;
+    font-size: 18px;
+}
+.models_name p{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.learn{
+    padding: 10px 20px;
+    margin-top: 25px;
+    font-size: 16px;
+    background-color: rgb(14, 102, 169);
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+a{
+    margin-left: 20px;
+    color: rgb(14, 102, 169);
+    text-decoration: none;
+    font-size: 18px;
+}
+a ion-icon{
+    position: relative;
+    bottom: -2;
+}
+.part_three hr{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 70px;
+}
+@media(max-width:1286px){
+    .lineup a{
+        margin-left: 40%;
+    }
+}
+@media(max-width:1155px){
+    .lineup a{
+        margin-left: 30%;
+    }
+}
+@media(max-width:993px){
+    .lineup a{
+        margin-left: 20%;
+    }
+    .lineup p{
+        margin-left: 20px;
+        font-size: 30px;
+    }
+}
+@media(max-width:611px){
+    .lineup{
+        display: block;
+    }
+    .lineup a{
+        margin-left: 20px;
+    }
+    .round{
+        height: 15px;
+    }
+}
+
+
+.part_four{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.small_cards{
+    width: 350px;
+    height: 130px;
+    margin: 20px;
+    text-align: center;
+}
+.not_anymore{
+    height: 170px;
+}
+@media(max-width:1286px){
+    .part_four{
+        width: 97%;
+        margin-left: 10px;
+    }
+}
+@media(max-width:550px){
+    .part_four p{
+        font-size: 14px;
+    }
+    .not_anymore{
+        height: 130px;
+        overflow: scroll;
+    }
+}.part_five{
+    width: 85%;
+    margin-left: 7.5%;
+    height: 80%;
+    border-radius: 25px;
+    background-image: url(https://www.apple.com/v/watch/bo/images/overview/banner/banner_watch_studio__bj5ig77p2j2a_large.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.part_five h3{
+    padding-top: 170px;
+    padding-left: 210px;
+    font-size: 30px;
+}
+.part_five p{
+    margin-left: 270px;
+}
+.part_five button{
+    padding: 8px 20px;
+    margin-left: 270px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 20px;
+    border-color: rgb(91, 17, 161);
+    cursor: pointer;
+}
+@media(max-width:1024px){
+    .part_five{
+        background-image: url(https://www.apple.com/v/watch/bo/images/overview/banner/banner_watch_studio__bj5ig77p2j2a_medium.jpg);
+    }
+    .part_five h3{
+        padding-top: 20px;
+    }
+}
+@media(max-width:755px){
+    .part_five{
+        text-align: center;
+    }
+    .part_five h3{
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    .part_five p{
+        margin-left: 0px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .part_five button{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+}
+
+
+.reason{
+    margin-top: 120px;
+    display: flex;
+}
+.reason p{
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 120px;
+}
+.reason a{
+    margin-left: 40%;
+    margin-top: 80px;
+}
+@media(max-width:1286px){
+    .reason a{
+        margin-left: 20%;
+    }
+}
+@media(max-width:1080px){
+    .reason p{
+        margin-left: 10%;
+    }
+    .reason a{
+        margin-left: 10%;
+    }
+}
+@media(max-width:930px){
+    .reason p{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .reason{
+        display: block;
+    }
+    .reason a{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+}
+
+
+.part_six{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+.six_card{
+    width: 370px;
+    height: 270px;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 40px;
+    margin: 20px;
+    position: relative;
+}
+.six_card img{
+    margin-top: 20px;
+}
+.six_card h6{
+    font-size: 23px;
+    margin-top: 15px;
+}
+.six_card p{
+    margin-top: 10px;
+}
+.six_card button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: 20;
+    right: 20;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+@media(max-width:754px){
+    .part_six{
+        margin-top: 30px;
+    }
+}
+
+
+
+
+.essentials{
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.essentials p{
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 120px;
+}
+.essentials a{
+    margin-left: 30%;
+}
+@media(max-width:1286px){
+    .essentials a{
+        margin-left: 20%;
+    }
+}
+@media(max-width:1080px){
+    .essentials p{
+        margin-left: 10%;
+    }
+    .essentials a{
+        margin-left: 10%;
+    }
+}
+@media(max-width:930px){
+    .essentials p{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .essentials{
+        display: block;
+    }
+    .essentials a{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+}
+
+
+.part_seven{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.seven_card{
+    width: 620px;
+    height: 600px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.147);
+    margin: 20px;
+    border-radius: 20px;
+}
+.seven_card p{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+.airpods{
+    background-image: url(https://www.apple.com/v/watch/bo/images/overview/essentials/banner_airpods__bobqeod4vk1y_xlarge.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.band{
+    background-image: url(https://www.apple.com/v/watch/bo/images/overview/essentials/banner_bands__fa2yj1435ia2_medium.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 360px;
+    margin-top: 130px;
+    border-radius: 20px;
+}@media(max-width:1286px){
+    .seven_card{
+        height: 640px;
+    }
+    .band{
+        margin-top: 120px;
+    }
+}
+@media(max-width:740px){
+    .seven_card p{
+        font-size: 20px;
+    }
+    .seven_card a{
+        font-size: 15px;
+    }
+}
+@media(max-width:550px){
+    .seven_card{
+        height: 500px;
+    }
+    .band{
+        margin-top: 20px;
+        height: 400px;
+    }
+}
